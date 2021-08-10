@@ -8,16 +8,8 @@ def setup():
     git_pass = input("what is your github password? ")
 
 
-    directory = "crt_git"
-
-    parent_directory = "~/automation/"
-
-
-    path = os.path.join(parent_directory, directory)
-
-    os.mkdir(path)
-
-    print(f"created {directory} in path ${path}")
+    with open("creds.txt", "w") as creds:
+        
 
 
 
@@ -33,7 +25,7 @@ def open_github():
 
 def main():
 
-    if not os.path.isfile("~/automation/crt_git/cred.txt"):
+    if not os.path.isfile("./creds.txt"):
         setup()
     else:
         pass
