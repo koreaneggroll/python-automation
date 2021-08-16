@@ -17,10 +17,21 @@ def upload_speed():
     print(f"\t\t\t {upload}\n")
 
 
+def ping():
+    print("\t\t===PING===")
+    st = speedtest.Speedtest()
+
+    st.get_servers([])
+    ping = st.results.ping
+
+    print(f"\t\t\t {ping}ms\n")
+
+
 def main():
     print("\n\n\t\t\t\t=======INTERNED SPEED=======\n\n\n\n")
     download_speed()
     upload_speed()
+    ping()
 
 
 main()
