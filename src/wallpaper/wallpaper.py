@@ -13,7 +13,7 @@ def wallpaper():
         int_current_time = int(current_time)
 
         if int_current_time < 12:
-            print("Switching to ")
+            print("Switching to light theme")
             os.system(
                 "/usr/bin/gsettings set org.gnome.desktop.background picture-uri /home/arin/python-automation-wallpapers/light-theme.jpg")
 
