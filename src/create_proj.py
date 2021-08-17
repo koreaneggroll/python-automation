@@ -83,6 +83,14 @@ def create_web_proj(dirName):
 
 
 
+
+def create_main_file(dirName):
+    dirLocation = dirName + "/src/"
+
+    os.mkdir(dirLocation)
+
+
+
 def main():
     project_language = input("What's your project's language of choice? ")
 
